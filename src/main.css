@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --soft-red: hsl(14, 88%, 65%);
+        --soft-violet: hsl(273, 75%, 66%);
+        --soft-blue: hsl(240, 73%, 65%);
+        --very-dark-grayish-blue: hsl(237, 12%, 33%);
+        --dark-grayish-blue: hsl(240, 6%, 50%);
+        --light-grayish-blue: hsl(240, 5%, 91%);
+    }
+}
+
+@layer components {
+    body {
+        @apply font-kumb bg-gradient-to-b from-soft-violet to-soft-blue min-h-screen w-screen;
+    }
+    #root {
+        @apply w-screen min-h-screen flex justify-items-center items-center;
+    }
+}

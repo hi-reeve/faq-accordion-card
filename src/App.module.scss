@@ -1,0 +1,22 @@
+.app {
+    @apply w-full;
+    .faq {
+		&--image{
+			@apply relative;
+		}
+        &--pattern-mobile {
+			@apply mx-auto;
+        }
+		&--woman-mobile{
+			@apply absolute -top-1/2  left-1/2 transform translate-x-[-55%] -translate-y-14;
+		}
+
+		&--content{
+			@apply px-4 pb-8	;
+		}
+		&--title{
+			@apply text-center font-bold text-4xl my-9;
+		}
+
+    }
+}
